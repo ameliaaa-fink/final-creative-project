@@ -42,6 +42,21 @@ tw-story[tags~="kyle"] {
   
 }
 
+input[type=text], textarea {
+    min-width: 20em;
+}
+input {
+    padding: 2px 3px;
+}
+input, textarea {
+    color: #fff;
+    background-color: #111;
+    border: 1px solid #444;
+    padding: .4em;
+}
+button, input, textarea {
+    outline: 0;
+}
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.3.0
  * for Harlowe 2.1.0 and higher
@@ -88,17 +103,34 @@ left: 1120px;
 showControls: true</tw-passagedata><tw-passagedata pid="5" name="messenger1" tags="messenger" position="675,600" size="100,100">(enchant:?page,(text-colour:black))
 &lt;br&gt;
 &lt;br&gt;
-[[Kyle-&gt;kyle1]]</tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[=
-(text-colour:black)[
+[[Kyle-&gt;kyle1]]</tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">
 {
- (live: 3s)[
+ (live: 2s)[
     (stop:)
+    &lt;br&gt; 
     &lt;br&gt;
     &lt;br&gt;
+    &lt;br&gt;(text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXX====&quot;)[|text&gt;[kyle is typing...]]
+    
+&lt;style&gt; img {
+max-width:5%;
+max-height:5%;
+position: relative;
+top: 40px;
+left: 400px;
+
+}
+
+&lt;/style&gt;
+[[&lt;img src=&quot;https://i.imgur.com/DOlOyOC.png&quot;&gt;-&gt;kyle2]]
+&lt;/div&gt;
+(live: 3s)[
+	(replace: ?text)[kyle: yo u get ruffaro&#39;s notes?]
     &lt;br&gt;
-   &lt;br&gt; kyle is typing...
+    (text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XX====&quot;)(force-input: &quot;uh who are you?&quot;)
+	(stop:)
  ]
-}]</tw-passagedata></tw-storydata>
+}</tw-passagedata><tw-passagedata pid="7" name="kyle2" tags="kyle" position="675,850" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
