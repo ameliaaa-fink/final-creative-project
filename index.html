@@ -9,8 +9,12 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play messages from kyle.</tw-noscript></noscript></tw-story>
-<tw-storydata name="messages from kyle" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="2B6383B1-8C2A-466D-B7FE-DDDC9CC66896" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="messages from kyle" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="2B6383B1-8C2A-466D-B7FE-DDDC9CC66896" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+tw-sidebar {
+  display: none;
+}
 
 tw-passage {
   font-family:Pixelify Sans;
@@ -21,17 +25,22 @@ tw-passage {
 }
 
 tw-story {
-  background-image:url("https://s3-screenshots.int-cdn.lcpdfrusercontent.com/monthly_2016_07/577bc20861855_WindowsXP-NoProgramsOpen.jpg.259d5bb1b6e4e0d9bacfc3ce7886ff46.jpg");
+  background-image: url("https://s3-screenshots.int-cdn.lcpdfrusercontent.com/monthly_2016_07/577bc20861855_WindowsXP-NoProgramsOpen.jpg.259d5bb1b6e4e0d9bacfc3ce7886ff46.jpg");
   background-size: cover;
   
 }
 
+.file {position: absolute; height: 90px; width: 90px; bottom: 160px; left: 890px}
+.messenger {position: absolute; height: 40px; width: 40px; bottom: 80px; left: 1000px}
+
+}
+
 tw-story[tags~="messenger"] {
   
-   background-image: url(https://i.imgur.com/ktdLNSW.jpeg);
+  background-image: url(https://i.imgur.com/nri6lz5.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
 
 tw-story[tags~="kyle"] {
@@ -40,6 +49,28 @@ tw-story[tags~="kyle"] {
   background-repeat: no-repeat;
   background-size: cover;
   
+}
+
+input[type=text], textarea {
+    min-width: 20em;
+  border: none;
+  outline: none;
+}
+input {
+    padding: 5px 3px;
+  border: none;
+  outline: none;
+}
+input, textarea {
+    color: #fff;
+    background-color: #111;
+    padding: .4em;
+  border: none;
+  outline: none;
+}
+input:focus textarea:focus {
+  border: none;
+  outline: none;
 }
 
 /**
@@ -71,34 +102,39 @@ tw-story[tags~="kyle"] {
 (track: &#39;windows&#39;, &#39;loop&#39;, false)
 (track: &#39;windows&#39;, &#39;playwhenpossible&#39;)
 
+[[&lt;img class=&quot;file&quot; src=&quot;https://64.media.tumblr.com/d852402b47b8943e21be91fe8a356aaa/b66fc41349118ffc-0b/s540x810/51c50855d35ef95b5d1ba1e879dd30bd8dafe014.png&quot;&gt;-&gt;file1]]
+
+[[&lt;img class=&quot;messenger&quot; src=&quot;https://files.softicons.com/download/application-icons/messenger-icons-by-tatice/png/256/Messenger.png&quot;&gt;-&gt;messenger1]]
+</tw-passagedata><tw-passagedata pid="4" name="hal.config" tags="" position="700,200" size="100,100">volumeDisplay: false
+showControls: true</tw-passagedata><tw-passagedata pid="5" name="messenger1" tags="messenger" position="675,600" size="100,100">(enchant:?page,(text-colour:black))
+[[Kyle-&gt;kyle1]] </tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">
+{
+ (live: 2s)[
+    (stop:)
+    &lt;br&gt; 
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;(text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXX====&quot;)[|text&gt;[kyle is typing...]]]
+    
 &lt;style&gt; img {
 max-width:5%;
 max-height:5%;
 position: relative;
-bottom: 80px;
-left: 1120px;
+top: 40px;
+left: 400px;
 
 }
 
 &lt;/style&gt;
-[[&lt;img src=&quot;https://i0.wp.com/technode.com/wp-content/uploads/2014/08/Messenger.png?fit=256%2C256&amp;ssl=1&quot;&gt;-&gt;messenger1]]
+[[&lt;img src=&quot;https://i.imgur.com/DOlOyOC.png&quot;&gt;-&gt;kyle2]]
 &lt;/div&gt;
-
-</tw-passagedata><tw-passagedata pid="4" name="hal.config" tags="" position="700,200" size="100,100">volumeDisplay: false
-showControls: true</tw-passagedata><tw-passagedata pid="5" name="messenger1" tags="messenger" position="675,600" size="100,100">(enchant:?page,(text-colour:black))
-&lt;br&gt;
-&lt;br&gt;
-[[Kyle-&gt;kyle1]]</tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[=
-(text-colour:black)[
-{
- (live: 3s)[
-    (stop:)
+(live: 3s)[
+	(replace: ?text)[kyle: yo u get ruffaro&#39;s notes?]
     &lt;br&gt;
-    &lt;br&gt;
-    &lt;br&gt;
-   &lt;br&gt; kyle is typing...
+    (text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XX====&quot;)(force-input: &quot;uh who are you?&quot;)
+	(stop:)
  ]
-}]</tw-passagedata></tw-storydata>
+}</tw-passagedata><tw-passagedata pid="7" name="kyle2" tags="kyle" position="675,850" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="file1" tags="" position="800,600" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
