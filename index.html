@@ -105,26 +105,15 @@ tw-story[tags~="legitprivate"] {
 }
 
 input[type=text], textarea {
-    min-width: 20em;
+  background-color: white;
+  width: 50%;
   border: none;
   outline: none;
+  line-height: 2em;
+  margin-bottom: 30px;
+  background-color: #f25b43;
 }
-input {
-    padding: 5px 3px;
-  border: none;
-  outline: none;
-}
-input, textarea {
-    color: #fff;
-    background-color: #111;
-    padding: .4em;
-  border: none;
-  outline: none;
-}
-input:focus textarea:focus {
-  border: none;
-  outline: none;
-}
+
 
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.3.0
@@ -163,19 +152,18 @@ showControls: true</tw-passagedata><tw-passagedata pid="5" name="messenger1" tag
 [[Kyle-&gt;kyle1]]
 
 
-[[&lt;img class=&quot;mexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;desktopa]]</tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">
-{
+[[&lt;img class=&quot;mexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;desktopa]]</tw-passagedata><tw-passagedata pid="6" name="kyle1" tags="kyle" position="675,725" size="100,100">{
  (live: 2s)[
     (stop:)
     &lt;br&gt; 
     &lt;br&gt;
     &lt;br&gt;
     &lt;br&gt;(text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXX====&quot;)[|text&gt;[kyle is typing...]]]
-    
 (live: 3s)[
 	(replace: ?text)[kyle: yo u get ruffaro&#39;s notes?]
-    &lt;br&gt;
-    (text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XX====&quot;)(force-input: &quot;uh who are you?&quot;)
+&lt;p&gt;
+&lt;br&gt;
+&lt;br&gt;(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXX=============&quot;)[(b4r:&quot;ridge&quot;)+(b4r-size:6)+(b4r-colour:white)[(text-colour:black)(force-input: &quot;uh who are you?&quot;)]]
 	(stop:)
  ]
 }
@@ -191,31 +179,20 @@ left: 675px;
 
 &lt;/style&gt;
 [[&lt;img src=&quot;https://i.imgur.com/NrTdTzT.png&quot;&gt;-&gt;kyle2]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="kyle2" tags="kyle" position="675,850" size="100,100">&lt;br&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="kyle2" tags="kyle" position="675,850" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX===&quot;)[{&lt;br&gt;
 &lt;br&gt;
-(text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXX====&quot;)[kyle: yo did u get ruffaro&#39;s notes?]]]
-(text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXX====&quot;)[uh who are you?]]]
-{(live: 1s)[  (stop:) (text-colour:black)+(align:&quot;&lt;======&quot;)+(box:&quot;=XXXXXXXXXX=========&quot;)[|text&gt;[kyle is typing...]]]
+&lt;br&gt;
+&lt;p&gt;(text-colour:black)[kyle: yo did u get ruffaro&#39;s notes?]
+&lt;p&gt;(text-colour:black)[you: uh who are you?]&lt;p&gt;
+(live: 1s)[  (stop:) (text-colour:black)[|text&gt;[kyle is typing...]]]
 (live: 3s)[
 	(replace: ?text)[kyle: haha very funny lou]
     &lt;br&gt;
-    (text-colour:black)+(align:&quot;&lt;==&quot;)+(box:&quot;=XX====&quot;)(force-input: &quot;this isn&#39;t lou??&quot;)
-	(stop:)
- ]
-}
-
-&lt;style&gt; img {
-max-width:5%;
-max-height:5%;
-position: fixed;
-top: 370px;
-left: 675px;
-
-}
-
-&lt;/style&gt;
-[[&lt;img src=&quot;https://i.imgur.com/NrTdTzT.png&quot;&gt;-&gt;kyle3]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="file1" tags="files" position="800,600" size="100,100">[[&lt;img class=&quot;travel&quot; src=&quot;https://i.imgur.com/xGfkRVp.png&quot;&gt;-&gt;travel]]
+    &lt;br&gt;
+&lt;p&gt; (text-color:black)[[1. ive never messaged you-&gt;kyle3a]]
+&lt;p&gt; (text-color:black)[[2. this isn&#39;t lou-&gt;kyle3b]]
+&lt;p&gt; (text-color:black)[[3. whos profile is this??-&gt;kyle3c]]
+ ]}]</tw-passagedata><tw-passagedata pid="8" name="file1" tags="files" position="800,600" size="100,100">[[&lt;img class=&quot;travel&quot; src=&quot;https://i.imgur.com/xGfkRVp.png&quot;&gt;-&gt;travel]]
 
 [[&lt;img class=&quot;kylephotos&quot; src=&quot;https://i.imgur.com/3CrGXFo.png&quot;&gt;-&gt;kylephotos]]
 
@@ -230,11 +207,92 @@ left: 675px;
 
 [[&lt;img class=&quot;photo3&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/kyleclub.JPG?raw=true&quot;&gt;-&gt;photo3]]
 
-[[&lt;img class=&quot;photo4&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/fire.png?raw=true&quot;&gt;-&gt;photo4]]</tw-passagedata><tw-passagedata pid="11" name="journal" tags="legitprivate" position="1050,725" size="100,100">[[&lt;img class=&quot;jexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;file1]]</tw-passagedata><tw-passagedata pid="12" name="kyle3" tags="" position="675,975" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="photo1" tags="kylephotos" position="925,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
-[[&lt;img class=&quot;photo1a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/kylepicnic.JPG?raw=true&quot;&gt;-&gt;photo1]]</tw-passagedata><tw-passagedata pid="14" name="photo2" tags="kylephotos" position="1050,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
-[[&lt;img class=&quot;photo2a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/park.png?raw=true&quot;&gt;-&gt;photo2]]</tw-passagedata><tw-passagedata pid="15" name="photo3" tags="kylephotos" position="800,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
-[[&lt;img class=&quot;photo3a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/kyleclub.JPG?raw=true&quot;&gt;-&gt;photo3]]</tw-passagedata><tw-passagedata pid="16" name="photo4" tags="kylephotos" position="925,975" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
-[[&lt;img class=&quot;photo4a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/fire.png?raw=true&quot;&gt;-&gt;photo4]]</tw-passagedata></tw-storydata>
+[[&lt;img class=&quot;photo4&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/fire.png?raw=true&quot;&gt;-&gt;photo4]]</tw-passagedata><tw-passagedata pid="11" name="journal" tags="legitprivate" position="1050,725" size="100,100">[[&lt;img class=&quot;jexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;file1]]</tw-passagedata><tw-passagedata pid="12" name="photo1" tags="kylephotos" position="925,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
+[[&lt;img class=&quot;photo1a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/kylepicnic.JPG?raw=true&quot;&gt;-&gt;photo1]]</tw-passagedata><tw-passagedata pid="13" name="photo2" tags="kylephotos" position="1050,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
+[[&lt;img class=&quot;photo2a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/park.png?raw=true&quot;&gt;-&gt;photo2]]</tw-passagedata><tw-passagedata pid="14" name="photo3" tags="kylephotos" position="800,850" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
+[[&lt;img class=&quot;photo3a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/kyleclub.JPG?raw=true&quot;&gt;-&gt;photo3]]</tw-passagedata><tw-passagedata pid="15" name="photo4" tags="kylephotos" position="925,975" size="100,100">[[&lt;img class=&quot;kexit&quot; src=&quot;https://i.imgur.com/1pm3WIv.png&quot;&gt;-&gt;kylephotos]]
+[[&lt;img class=&quot;photo4a&quot; src=&quot;https://github.com/ameliaaa-fink/digital-writing-twine/blob/main/images/fire.png?raw=true&quot;&gt;-&gt;photo4]]</tw-passagedata><tw-passagedata pid="16" name="kyle3a" tags="kyle" position="550,975" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX===&quot;)[{&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;(text-colour:black)[you: uh who are you?]&lt;p&gt;
+&lt;p&gt;(text-colour:black)[kyle: haha very funny lou]
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+(b4r:&quot;ridge&quot;)+(b4r-size:6)+(b4r-colour:white)[(text-colour:black)(force-input: &quot;ive never messaged you&quot;)]
+ }]
+ 
+ &lt;style&gt; img {
+max-width:5%;
+max-height:5%;
+position: fixed;
+top: 370px;
+left: 675px;
+
+}
+
+&lt;/style&gt;
+[[&lt;img src=&quot;https://i.imgur.com/NrTdTzT.png&quot;&gt;-&gt;kyle4]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="kyle3b" tags="kyle" position="425,975" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX===&quot;)[{&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;(text-colour:black)[you: uh who are you?]&lt;p&gt;
+&lt;p&gt;(text-colour:black)[kyle: haha very funny lou]
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+(b4r:&quot;ridge&quot;)+(b4r-size:6)+(b4r-colour:white)[(text-colour:black)(force-input: &quot;this isnt lou...&quot;)]
+ }]
+ 
+ &lt;style&gt; img {
+max-width:5%;
+max-height:5%;
+position: fixed;
+top: 370px;
+left: 675px;
+
+}
+
+&lt;/style&gt;
+[[&lt;img src=&quot;https://i.imgur.com/NrTdTzT.png&quot;&gt;-&gt;kyle4]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="kyle3c" tags="kyle" position="300,975" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX===&quot;)[{&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;(text-colour:black)[you: uh who are you?]&lt;p&gt;
+&lt;p&gt;(text-colour:black)[kyle: haha very funny lou]
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+(b4r:&quot;ridge&quot;)+(b4r-size:6)+(b4r-colour:white)[(text-colour:black)(force-input: &quot;whos profile is this...&quot;)]
+ }]
+ 
+ &lt;style&gt; img {
+max-width:5%;
+max-height:5%;
+position: fixed;
+top: 370px;
+left: 675px;
+
+}
+
+&lt;/style&gt;
+[[&lt;img src=&quot;https://i.imgur.com/NrTdTzT.png&quot;&gt;-&gt;kyle4]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="kyle4" tags="kyle" position="550,1100" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX===&quot;)[{&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;(text-colour:black)[kyle: haha very funny lou]
+&lt;p&gt;(text-colour:black)[you: (if:(history: where its name contains &quot;kyle3a&quot;)&#39;s length is 1)[ive never messaged you...](if:(history: where its name contains &quot;kyle3b&quot;)&#39;s length is 1)[this isnt lou?]](if:(history: where its name contains &quot;kyle3c&quot;)&#39;s length is 1)[whos profile is this...]&lt;p&gt;
+(live: 1s)[  (stop:) (text-colour:black)[|text&gt;[kyle is typing...]]]
+(live: 3s)[
+	(replace: ?text)[kyle: wait r u on lou&#39;s old computer?]
+    &lt;br&gt;
+    &lt;br&gt;
+&lt;p&gt; (text-color:black)[[1. who?-&gt;kyle5a]]
+&lt;p&gt; (text-color:black)[[2. i guess-&gt;kyle5b]]
+ ]}]</tw-passagedata><tw-passagedata pid="20" name="kyle5b" tags="" position="550,1225" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="kyle5a" tags="" position="425,1225" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
